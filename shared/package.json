@@ -1,0 +1,18 @@
+{
+  "name": "@krishna-atta-chakki/shared",
+  "version": "1.0.0",
+  "private": true,
+  "types": "./types/reports.d.ts",
+  "exports": {
+    "./reports": {
+      "types": "./types/reports.d.ts",
+      "default": "./types/reports.d.ts"
+    },
+    "./money": {
+      "types": "./utils/money.d.ts",
+      "import": "./utils/money.mjs",
+      "require": "./utils/money.js",
+      "default": "./utils/money.js"
+    }
+  }
+}
