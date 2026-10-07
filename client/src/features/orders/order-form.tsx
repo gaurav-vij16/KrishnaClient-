@@ -321,8 +321,8 @@ export function OrderForm({ initialOrder = null, onSaved }: Props) {
         </div>
       )}
 
-      <div className="grid items-start gap-5 md:grid-cols-[minmax(0,1.15fr)_minmax(300px,0.85fr)] xl:gap-6">
-        <div className="space-y-4">
+      <div className="grid grid-cols-1 items-start gap-5 md:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] xl:gap-6">
+        <div className="min-w-0 space-y-4">
           <OrderStep
             number={1}
             title="Order Type"
@@ -440,7 +440,7 @@ export function OrderForm({ initialOrder = null, onSaved }: Props) {
           </OrderStep>
         </div>
 
-        <aside className="md:sticky md:top-[84px]">
+        <aside className="min-w-0 md:sticky md:top-[84px]">
           <BillSummary
             lines={lines}
             total={total}

@@ -13,7 +13,7 @@ const OPTIONS = [
 export function OrderTypeToggle({ value, onChange }: Props) {
   return (
     <div
-      className="grid grid-cols-2 gap-3"
+      className="grid min-w-0 grid-cols-2 gap-2 sm:gap-3"
       role="group"
       aria-label="Order type"
     >
@@ -29,7 +29,7 @@ export function OrderTypeToggle({ value, onChange }: Props) {
             aria-pressed={selected}
             onClick={() => onChange(option.value)}
             className={
-              'min-h-[76px] rounded-xl border-2 px-3 py-3 text-left transition focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-200 ' +
+              'min-h-[76px] min-w-0 rounded-xl border-2 px-2.5 py-3 text-left transition focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-200 sm:px-3 ' +
               stateClasses
             }
           >

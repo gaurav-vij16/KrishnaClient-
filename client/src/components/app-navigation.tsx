@@ -67,7 +67,7 @@ export function AppNavigation({ current }: Props) {
       </aside>
       <nav
         aria-label="Mobile navigation"
-        className="fixed inset-x-0 bottom-0 z-50 grid min-h-[68px] grid-cols-3 border-t border-stone-200 bg-white/95 px-2 pb-2 pt-1 shadow-[0_-5px_20px_rgba(41,37,36,0.08)] backdrop-blur lg:hidden"
+        className="fixed inset-x-0 bottom-0 z-50 grid min-h-[68px] grid-cols-3 border-t border-stone-200 bg-white/95 px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] pt-1 shadow-[0_-5px_20px_rgba(41,37,36,0.08)] backdrop-blur lg:hidden"
       >
         {navigationItems.map(({ href, id, label, icon: Icon }) => (
           <Link

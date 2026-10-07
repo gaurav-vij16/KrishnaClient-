@@ -16,7 +16,7 @@ export function OrderStep({
   return (
     <section
       className={
-        'rounded-2xl border border-stone-200 bg-white p-4 shadow-sm sm:p-5 ' +
+        'min-w-0 rounded-2xl border border-stone-200 bg-white p-4 shadow-sm sm:p-5 ' +
         className
       }
     >
